@@ -1,5 +1,5 @@
+import type { Task } from "@/entities/task/model/types";
 import { Divider, List, ListItem, ListItemText, Paper, Typography } from "@mui/material";
-import type { Task } from "../../../entities/task/model/types";
 import { useMemo } from "react";
 
 interface StatisticsProps {

@@ -1,9 +1,9 @@
 import './App.css'
 import { CssBaseline } from '@mui/material'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Layout } from '../shared/ui/Layout/Layout'
-import { HomePage } from '../pages/home/ui/homePage'
-import { StatsPage } from '../pages/stats/ui/StatsPage'
+import { Layout } from '@/shared/ui/Layout/Layout'
+import { HomePage } from '@/pages/home/ui/homePage'
+import { StatsPage } from '@/pages/stats/ui/StatsPage'
 
 function App() {
   return (

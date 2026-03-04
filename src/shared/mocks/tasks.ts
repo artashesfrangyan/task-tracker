@@ -1,4 +1,4 @@
-import type { Task } from "../../entities/task/model/types";
+import type { Task } from "@/entities/task/model/types";
 
 export const mockTasks: Task[] = [
     { id: '1', status: 'создано' },

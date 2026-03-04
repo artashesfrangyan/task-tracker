@@ -1,7 +1,7 @@
 import type { FC } from "react";
-import type { Task } from "../../entities/task/model/types";
 import { Box, Stack, Typography } from "@mui/material";
-import { TaskCard } from "../../entities/task/ui/TaskCard";
+import { TaskCard } from "@/entities/task/ui/TaskCard";
+import type { Task } from "@/entities/task/model/types";
 
 interface TaskListProps {
     tasks: Task[];

@@ -1,6 +1,6 @@
-import type { Task } from "../model/types"
 import type { FC } from "react"
 import { Box, Card, CardContent, Chip, Typography } from "@mui/material"
+import type { Task } from "../model/types";
 
 const statusColors: Record<string, 'default' | 'warning' | 'success'> = {
     'создано': 'default',
