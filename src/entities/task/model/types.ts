@@ -1,4 +1,4 @@
-export type TaskStatus = 'created' | 'in-progress' | 'completed';
+export type TaskStatus = 'создано' | 'в процессе' | 'завершено';
 
 export interface Task {
     id: string;

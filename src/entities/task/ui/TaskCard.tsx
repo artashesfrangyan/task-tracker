@@ -3,9 +3,9 @@ import type { FC } from "react"
 import { Box, Card, CardContent, Chip, Typography } from "@mui/material"
 
 const statusColors: Record<string, 'default' | 'warning' | 'success'> = {
-    created: 'default',
-    'in-progress': 'warning',
-    completed: 'success'
+    'создано': 'default',
+    'в процессе': 'warning',
+    'завершено': 'success'
 }
 
 interface TaskCardProps {
