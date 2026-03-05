@@ -14,7 +14,7 @@ function App() {
   return (
     <Provider store={store}>
       <CssBaseline />
-      <BrowserRouter>
+      <BrowserRouter basename="/task-tracker">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />}></Route>
