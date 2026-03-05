@@ -12,7 +12,7 @@ const tasksSlice = createSlice({
     name: 'tasks',
     initialState,
     reducers: {
-        setTasks(state, action: PayloadAction<Task[]>) {
+        setTasks(_, action: PayloadAction<Task[]>) {
             return action.payload
         },
         addTask(state, action: PayloadAction<Task>) {
