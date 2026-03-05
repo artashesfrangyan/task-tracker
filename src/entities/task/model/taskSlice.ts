@@ -1,32 +1,31 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { Task } from "./types";
 
-interface TasksState {
-    tasks: Task[];
-}
-
-const initialState: TasksState = {
-    tasks: [],
-}
+const initialState: Task[] = [    
+    { id: '1', status: 'создано' },
+    { id: '2', status: 'в процессе' },
+    { id: '3', status: 'завершено' },
+    { id: '4', status: 'создано'}
+]
 
 const tasksSlice = createSlice({
     name: 'tasks',
     initialState,
     reducers: {
         setTasks(state, action: PayloadAction<Task[]>) {
-            state.tasks = action.payload
+            state = action.payload
         },
         addTask(state, action: PayloadAction<Task>) {
-            state.tasks.push(action.payload);
+            state.push(action.payload);
         },
         updateTask(state, action: PayloadAction<Task>) {
-            const index = state.tasks.findIndex(t => t.id === action.payload.id);
+            const index = state.findIndex(t => t.id === action.payload.id);
             if (index !== -1) {
-                state.tasks[index] = action.payload;
+                state[index] = action.payload;
             }
         },
         removeTask(state, action: PayloadAction<string>) {
-            state.tasks = state.tasks.filter(t => t.id !== action.payload)
+            state = state.filter(t => t.id !== action.payload)
         }
     }
 })
