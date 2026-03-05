@@ -32,7 +32,7 @@ npm install
 ```bash
 npm run dev
 ```
-4. Открыть [http://localhost:5173](http://localhost:5173/task-tracker) в браузере.
+4. Открыть [http://localhost:5173/task-tracker](http://localhost:5173/task-tracker) в браузере.
 
 Как проверить
 
